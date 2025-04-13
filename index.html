@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIREOS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
@@ -14,57 +18,88 @@
         Ton navigateur ne supporte pas la balise vidéo.
     </video>
 
-    <!-- Logo -->
-    <div class="logoDiv">
-        <img id="logo" src="logo.png" alt="Logo VIREOS">
-    </div>
-    
-    <!-- Section 1 -->
-    <div id="section1">
-        <button class="btn" id="scrollButton" onclick="location.href='#'">Participer à l'étude</button>
-    </div>
-
-    <!-- Section 2: VIREOS Soft -->
-    <div id="section2">
-        <div class="text-container">
-            <h1>VIREOS Soft</h1>
-            <p>VIREOS Soft se concentre sur le développement de solutions logicielles et web personnalisées pour améliorer les processus d'entreprises.
-                Nous créons des solutions adaptés aux besoins spécifiques de nos clients pour automatiser des tâches, gérer des données et
-                optimiser la productivité. Que ce soit pour un site web, une application ou une solution complète d'entreprise, notre équipe
-                de développeurs met en œuvre des technologies modernes et des interfaces intuitives.</p>
+    <header>
+        <div class="logo-container">
+            <img id="logo-header" src="logoTexte.png" alt="Logo VIREOS">
         </div>
-        <img src="devWeb.jpg" alt="Développement Web">
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#section2">VIREOS Soft</a></li>
+                <li><a href="#section3">VIREOS Robotics</a></li>
+                <li><a href="#section4">VIREOS Energy</a></li>
+                <li><a href="#section5">Qui sommes-nous</a></li>
+                <li><button class="btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScf3o9iAd2F_8QBbn5jpysRNRAym25Pc6J6u2rmDdDCJ5DR0Q/viewform?usp=header', '_blank')">Participer à l'étude</button></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Section 3: VIREOS Robotics -->
-    <div id="section3">
-        <div class="text-container">
-            <h1>VIREOS Robotics</h1>
-            <p>VIREOS Robotics conçoit des kits robotiques éducatifs destinés à enseigner la robotique aux élèves et étudiants. Nos kits sont conçus pour
-                être modulables, simples d’utilisation, tout en offrant une approche pratique pour apprendre la programmation et les bases de l'automatisation.
-                De plus, nous développons des bras robotiques pour l’industrie, permettant d’automatiser des tâches dans les petites et moyennes entreprises,
-                avec des solutions adaptées à chaque besoin.</p>
-        </div>
-        <img src="robotique.jpg" alt="Robotique">
-    </div>
+    <main>
+        <section id="section1" class="hero">
+            <div class="hero-content">
+                <img id="logo-main" src="logo.png" alt="Logo VIREOS" data-aos="zoom-in" data-aos-delay="200">
+                <h1>Innover pour un avenir meilleur</h1>
+                <p>Solutions logicielles, robotique avancée et énergie durable.</p>
+                <button class="btn-primary hero-button" onclick="location.href='#section2'">En savoir plus</button>
+            </div>
+        </section>
 
-    <!-- Section 4: VIREOS Energy -->
-    <div id="section4">
-        <div class="text-container">
-            <h1>VIREOS Energy</h1>
-            <p>VIREOS Energy travaille à révolutionner le secteur énergétique avec des solutions innovantes et durables. Le projet phare de VIREOS Energy est
-                le tokamak miniature BARYON, une technologie qui vise à produire de l'énergie propre à petite échelle. Ce projet ambitieux est destiné à offrir
-                une source d'énergie renouvelable accessible pour les foyers tout en respectant l'environnement et en réduisant les coûts énergétiques.</p>
-        </div>
-        <img src="energy.jpg" alt="Énergie">
-    </div>
+        <section id="section2" class="content-section">
+            <div class="text-container" data-aos="fade-right">
+                <h2>VIREOS Soft</h2>
+                <p>VIREOS Soft se concentre sur le développement de solutions logicielles et web personnalisées pour améliorer les processus d'entreprises.
+                    Nous créons des solutions adaptées aux besoins spécifiques de nos clients pour automatiser des tâches, gérer des données et
+                    optimiser la productivité. Que ce soit pour un site web, une application ou une solution complète d'entreprise, notre équipe
+                    de développeurs met en œuvre des technologies modernes et des interfaces intuitives.</p>
+            </div>
+            <div class="image-container" data-aos="fade-left" data-aos-delay="200">
+                <img src="devWeb.jpg" alt="Développement Web">
+            </div>
+        </section>
 
-    <!-- Section 5: Contact -->
-    <!-- <div id="section5">
-        <h1>Contact</h1>
-    </div> -->
+        <section id="section3" class="content-section reversed">
+            <div class="text-container" data-aos="fade-left">
+                <h2>VIREOS Robotics</h2>
+                <p>VIREOS Robotics conçoit des kits robotiques éducatifs destinés à enseigner la robotique aux élèves et étudiants. Nos kits sont conçus pour
+                    être modulables, simples d’utilisation, tout en offrant une approche pratique pour apprendre la programmation et les bases de l'automatisation.
+                    De plus, nous développons des bras robotiques pour l’industrie, permettant d’automatiser des tâches dans les petites et moyennes entreprises,
+                    avec des solutions adaptées à chaque besoin.</p>
+            </div>
+            <div class="image-container" data-aos="fade-right" data-aos-delay="200">
+                <img src="robotique.jpg" alt="Robotique">
+            </div>
+        </section>
 
-    <!-- Script JS -->
+        <section id="section4" class="content-section">
+            <div class="text-container" data-aos="fade-right">
+                <h2>VIREOS Energy</h2>
+                <p>VIREOS Energy travaille à révolutionner le secteur énergétique avec des solutions innovantes et durables. Le projet phare de VIREOS Energy est
+                    le tokamak miniature BARYON, une technologie qui vise à produire de l'énergie propre à petite échelle. Ce projet ambitieux est destiné à offrir
+                    une source d'énergie renouvelable accessible pour les foyers tout en respectant l'environnement et en réduisant les coûts énergétiques.</p>
+            </div>
+            <div class="image-container" data-aos="fade-left" data-aos-delay="200">
+                <img src="energy.jpg" alt="Énergie">
+            </div>
+        </section>
+
+        <section id="section5" class="about-section">
+            <h2 data-aos="zoom-out">Qui sommes-nous</h2>
+            <p data-aos="flip-left" data-aos-delay="100">
+                VIREOS est une entreprise innovante fondée par Mathéo FERNANDES--EHRET, un entrepreneur passionné par la technologie et l'énergie durable.
+                 Elle se compose de trois branches principales. <br> <br>
+                 L'objectif global de VIREOS est de devenir un leader dans les secteurs de l'énergie domestique, de la robotique et
+                  du développement logiciel d'ici 2035. La production à grande échelle de BARYON est prévue pour 2027, avec des revenus
+                   générés dès 2026. Le créateur vise à transformer l'énergie domestique, rendre la robotique accessible et offrir des solutions
+                    logicielles adaptées aux besoins des entreprises.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 VIREOS - Tous droits réservés</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
