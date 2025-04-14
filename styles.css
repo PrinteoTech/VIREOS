@@ -369,11 +369,29 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+#section3-mobile{
+  display: none;
+}
+
 /* TABLETTES (768px à 1024px) */
 @media screen and (max-width: 1024px) {
   header {
+    display: none;
     flex-direction: column;
     padding: 1rem 5%;
+  }
+
+  #section3{
+    display: none;
+  }
+
+  #section3-mobile{
+    display: block;
+  }
+
+  nav{
+    display: none;
   }
 
   nav ul {
@@ -387,6 +405,7 @@ section.visible {
     flex-direction: column;
     text-align: center;
     padding: 10% 5%;
+    align-items: center;
   }
 
   .text-container,
@@ -438,6 +457,7 @@ section.visible {
 /* SMARTPHONES (<768px) */
 @media screen and (max-width: 767px) {
   header {
+    display: none;
     flex-direction: column;
     padding: 1rem 5%;
   }
@@ -476,6 +496,10 @@ section.visible {
     padding: 15% 5%;
   }
 
+  .content-section.reversed{
+    flex-direction: row-reverse;
+  }
+
   .text-container,
   .image-container {
     width: 100%;
@@ -497,6 +521,7 @@ section.visible {
   footer {
     font-size: 0.9rem;
   }
+  
 }
 
 
