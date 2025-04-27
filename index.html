@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="icon-dark.ico" media="(prefers-color-scheme: light)">
     <link rel="icon" href="icon-light.ico" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <meta name="description" content="VIREOS - Énergie durable, robotique éducative et logiciels sur-mesure. Découvrez nos solutions pour changer le futur.">
 </head>
 
@@ -116,7 +115,11 @@
         <p>&copy; 2025 VIREOS - Tous droits réservés</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    <script src="assets/aos/src/js/aos.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          AOS.init();
+        });
     </script>
 </body>
 
