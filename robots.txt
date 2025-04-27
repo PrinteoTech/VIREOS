@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vireos.fr/sitemap.xml
